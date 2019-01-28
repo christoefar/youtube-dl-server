@@ -15,6 +15,7 @@ WORKDIR /usr/src/app
 
 COPY requirements.txt /usr/src/app/
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install https://github.com/Khang-NT/youtube-dl/archive/master.zip
 
 COPY . /usr/src/app
 
